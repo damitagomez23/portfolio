@@ -1,0 +1,123 @@
+nav, .main-content {
+  display: flex;
+  align-items: center;
+}
+
+.main-content {
+  flex-direction: column;
+}
+
+footer {
+  margin: 3rem;
+}
+
+header, .main-content {
+  width: 100%;
+}
+
+header {
+  margin-bottom: 3rem;
+}
+
+nav {
+  height: 4rem;
+  padding-left: 1.75rem;
+}
+
+nav ul {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+.foot-content a:hover {
+  color: #B43F6B;
+}
+
+.menu {
+  margin-left: 1rem;
+  font-size: 25px;
+  border: none;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  min-width: auto;
+  padding: 16px;
+  z-index: 1;
+}
+
+.dropdown-content, nav ul {
+  display: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul {
+  padding-top: 1rem;
+}
+
+.info {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.foot-content{
+  text-align: center;
+}
+
+/* use the media section to anchor the footer links at the bottom of the screen depending on the size */
+@media (min-width: 425px) {
+  h1 {
+      font-size: 35px;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+      font-size: 55px;
+  }
+
+  .dropdown {
+      display: none;
+  }
+
+  .logo {
+      display: block;
+  }
+
+  nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly;
+      width: 70%;
+  }
+}
+
+@media (min-width: 950px) {
+  h1 {
+      font-size: 75px;
+  }
+}
+
